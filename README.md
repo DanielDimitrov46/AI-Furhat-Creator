@@ -30,3 +30,25 @@ Backend API for creating and managing conversational AI characters with Furhat r
 - SQLAlchemy + PostgreSQL
 - Pydantic for data validation
 - Docker Compose for containerization
+
+## Getting Started
+
+### Prerequisites
+- Docker and Docker Compose installed
+- `.env` file configured (copy from `.env.example` if available)
+
+### Starting the Project
+
+1. **Start the services with Docker Compose:**
+   ```bash
+   docker-compose up -d
+   ```
+
+2. **Access the API:**
+   - API will be available at `http://localhost:8000`
+   - API documentation at `http://localhost:8000/docs`
+
+3. **Stop the services:**
+   ```bash
+   docker-compose down
+   ```
