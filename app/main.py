@@ -71,7 +71,7 @@ async def user_turn(session_id: str, body: schemas.UserTurnIn, db: Session = Dep
     result = await llm.generate_turn(
         character_prompt=char.character_prompt,
         history=history,
-        user_text=body.text,
+        character_id=char.id,
     )
 
     reply = result.get("reply", "")
